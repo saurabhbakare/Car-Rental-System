@@ -1,0 +1,92 @@
+.add-variant-container {
+  width: 95%;
+  max-width: 600px;
+  margin: 120px auto 50px;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  animation: scaleUpFade 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.add-variant-container h2 {
+  font-family: var(--font-heading);
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-primary);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.add-variant-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-variant-form label {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.add-variant-form input,
+.add-variant-form select,
+.add-variant-form textarea {
+  padding: 14px 16px;
+  font-size: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.add-variant-form select option {
+  background: #111;
+  color: #fff;
+}
+
+.add-variant-form input:focus,
+.add-variant-form select:focus,
+.add-variant-form textarea:focus {
+  border-color: var(--color-secondary);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.15);
+}
+
+.add-variant-btn {
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+  color: #000;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: var(--transition-fast);
+  margin-top: 10px;
+}
+
+.add-variant-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 106, 0, 0.35);
+}
+
+.close-cross-btn {
+  transition: var(--transition-fast) !important;
+}
+
+.close-cross-btn:hover {
+  transform: scale(1.15) !important;
+  color: #ff3b30 !important;
+}
+

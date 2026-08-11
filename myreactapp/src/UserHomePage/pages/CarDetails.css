@@ -1,0 +1,88 @@
+.car-details-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start;
+  gap: 50px; /* Space between image and info */
+  padding: 60px;
+  background-color: #111;
+  color: white;
+  min-height: 100vh;
+  flex-wrap: wrap; /* Responsive wrap */
+  box-sizing: border-box;
+}
+
+.car-image-box img {
+  width: 520px;
+  max-width: 90%; /* Responsive width */
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #ff6a00;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.car-info-box {
+  width: 45%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.car-info-box h1 {
+  color: #ff6a00;
+  margin-bottom: 20px;
+}
+
+.car-info-box p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  /* Removed negative margin */
+}
+
+.book-btn, .back-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 15px;
+}
+
+.book-btn {
+  background-color: #ff6a00;
+}
+
+.book-btn:hover {
+  background-color: #ff8c2a;
+}
+
+.back-btn {
+  background-color: #444;
+  margin-left: 20px; /* Space between buttons */
+}
+
+.back-btn:hover {
+  background-color: #555;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+  .car-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .car-info-box {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .back-btn {
+    margin-left: 0;
+  }
+}

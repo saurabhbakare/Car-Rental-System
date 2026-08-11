@@ -1,0 +1,107 @@
+/* ================================
+   NAVBAR MAIN
+================================ */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 50px;
+  z-index: 10;
+  background: transparent; /* shows background image */
+  backdrop-filter: blur(2px); /* optional glass look */
+}
+
+/* ================================
+   LOGO
+================================ */
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ff8300;
+}
+
+/* ================================
+   MENU
+================================ */
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-weight: bold;
+  color: white;
+}
+
+.menu li {
+  color: #ffffff;  
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.menu li:hover {
+  color: #ff8300;
+}
+
+/* ================================
+   LOGIN BUTTONS
+================================ */
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.user-btn,
+.admin-btn {
+  background: #ff8300;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: black;
+  font-size: 14px;
+  transition: transform 0.2s ease-in-out;
+  white-space: nowrap; /* keep in one line */
+}
+
+.user-btn:hover,
+.admin-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ================================
+   RESPONSIVE FIX FOR SMALL SCREENS
+================================ */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-buttons {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none; /* hide menu on very small screens */
+  }
+
+  .nav-buttons {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}

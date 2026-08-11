@@ -1,0 +1,180 @@
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+/* HERO SECTION */
+.about-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-hero h1 {
+  font-family: var(--font-heading);
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* IMAGE + WHO WE ARE */
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin: 60px 0;
+  align-items: center;
+}
+
+.about-img-box {
+  flex: 1.1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.6));
+  animation: floatCar 6s ease-in-out infinite;
+}
+
+.about-text {
+  flex: 1;
+  color: var(--text-primary);
+}
+
+.about-text h2 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.about-text li {
+  color: var(--text-primary);
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* WHY CHOOSE US */
+.why-choose {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.why-choose h2 {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.why-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 35px 25px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 10px 25px rgba(0, 242, 254, 0.1);
+}
+
+.why-card h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.why-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* EXPERIENCE BOX */
+.experience {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-primary);
+  text-align: center;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  margin-top: 80px;
+  box-shadow: var(--shadow-sm);
+}
+
+.experience h1 {
+  font-family: var(--font-heading);
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.experience p {
+  font-size: 18px;
+  margin-top: 8px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .about-flex {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about-container {
+    padding: 20px;
+  }
+}
+
